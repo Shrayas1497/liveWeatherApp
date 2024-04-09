@@ -17,6 +17,7 @@
 
 
 
+
 # for  starting backend server :-> 
 step 1.   copy or download the repo 
 
@@ -41,9 +42,10 @@ step 2.npm install ( only once for first time)
 step 3.  npm start  
 
 
-pic 1
+pic 1:->
 
-<img width="1440" alt="Screenshot 2024-04-09 at 11 00 36 PM" src="https://github.com/Shrayas1497/liveWeatherApp/assets/52887997/e09e9489-7877-40ec-a551-e991b07fac31">
+<img width="1440" alt="Screenshot 2024-04-09 at 11 57 59 PM" src="https://github.com/Shrayas1497/liveWeatherApp/assets/52887997/6465bc46-f763-4bff-a9ef-a21800d294cc">
+
 
 
 
