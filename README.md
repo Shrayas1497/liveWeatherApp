@@ -1,7 +1,9 @@
 # liveWeatherApp
 
 
-
+# for  starting backend server :-> 
+step 1.     cd weather 
+step2 .     node index.js
 
 
 pic 1
