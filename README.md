@@ -2,8 +2,27 @@
 
 
 # for  starting backend server :-> 
-step 1.     cd weather 
-step2 .     node index.js
+step 1.   copy or download the repo 
+
+step 2. npm install 
+
+
+step 3 .node index.js
+
+
+
+# for  starting frontend  server :-> 
+step 1. cd weather 
+
+
+
+step 2.npm install 
+
+
+
+
+
+step 3.  npm start  
 
 
 pic 1
