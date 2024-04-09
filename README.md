@@ -1,5 +1,5 @@
 # liveWeatherApp
-
+# Note: the tempature is given by the api not personally so donot panic !!
 
 # for  starting backend server :-> 
 step 1.   copy or download the repo 
