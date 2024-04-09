@@ -1,10 +1,26 @@
 # liveWeatherApp
-# Note: the tempature is given by the api not personally so donot panic !!
+
+
+
+
+
+# Note: -> the tempature is given by the api not personally so donot panic !!
+
+
+
+
+
+
+
+
+
+
+
 
 # for  starting backend server :-> 
 step 1.   copy or download the repo 
 
-step 2. npm install 
+step 2. npm install ( only once for first time)
 
 
 step 3 .node index.js
@@ -16,7 +32,7 @@ step 1. cd weather
 
 
 
-step 2.npm install 
+step 2.npm install ( only once for first time)
 
 
 
