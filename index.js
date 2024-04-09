@@ -17,21 +17,21 @@ app.use(cors({
   origin: 'http://localhost:3000',
   
 }));
-const apiKey = '49a93aadde7bfaf18d8929dff0e9f1e5'; // Replace this with your actual API key
+const apiKey = '49a93aadde7bfaf18d8929dff0e9f1e5'; 
 
 // API endpoint to fetch weather data
 app.post('/api/weather', async (req, res) => {
   try {
     const { longitude, latitude } = req.body;
 
-    // Call weather API to fetch weather data based on latitude and longitude
+    
     const { data } = await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}`);
 
     res.json({
       location: data.name,
       temperature: data.main.temp,
       conditions: data.weather[0].description
-      // Add additional weather data as needed
+      
     });
     console.log(data)
   } catch (error) {
@@ -40,9 +40,9 @@ app.post('/api/weather', async (req, res) => {
   }
 });
 
-// WebSocket for real-time updates
+
 wss.on('connection', (ws) => {
-  // Interval to fetch weather data every 30 seconds and send updates to frontend
+ 
   const interval = setInterval(async () => {
     try {
       const { data } = await axios.get(`https://api.openweathermap.org/data/2.5/weather?q=London&appid=${apiKey}`);
@@ -51,7 +51,7 @@ wss.on('connection', (ws) => {
         location: data.name,
         temperature: data.main.temp,
         conditions: data.weather[0].description
-        // Add additional weather data as needed
+        
       
       }));
       console.log(data)
