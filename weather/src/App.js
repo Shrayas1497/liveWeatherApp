@@ -10,7 +10,7 @@ const App = () => {
   const [errorMessage, setErrorMessage] = useState(null);
 
   useEffect(() => {
-    // Function to fetch weather data based on user's current location
+  
     const fetchWeatherData = async (latitude, longitude) => {
       try {
         const response = await axios.post('http://localhost:5000/api/weather', { latitude, longitude });
@@ -20,7 +20,6 @@ const App = () => {
       }
     };
 
-    // Function to get user's current location
     const getLocation = () => {
       navigator.geolocation.getCurrentPosition(
         (position) => {
@@ -56,7 +55,7 @@ const App = () => {
         </div>
       )}
 
-      {/* Display error message if applicable */}
+    
       {errorMessage && <p>{errorMessage}</p>}
     </div>
   );
